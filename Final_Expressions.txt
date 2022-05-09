@@ -1,0 +1,26 @@
+F_fx = 
+-(g*h*l_f*m*mu_f*mu_r*cos(theta) - L*g*l_r*m*mu_f*cos(theta) + g*h*l_r*m*mu_f*mu_r*cos(theta))/(L*(L + h*mu_f - h*mu_r))
+
+
+F_rx = 
+(L*g*l_f*m*mu_r*cos(theta) + g*h*l_f*m*mu_f*mu_r*cos(theta) + g*h*l_r*m*mu_f*mu_r*cos(theta))/(L*(L + h*mu_f - h*mu_r))
+
+
+F_fz = 
+-(g*h*l_f*m*mu_r*cos(theta) - L*g*l_r*m*cos(theta) + g*h*l_r*m*mu_r*cos(theta))/(L*(L + h*mu_f - h*mu_r))
+
+
+F_rz = 
+(L*g*l_f*m*cos(theta) + g*h*l_f*m*mu_f*cos(theta) + g*h*l_r*m*mu_f*cos(theta))/(L*(L + h*mu_f - h*mu_r))
+
+
+W_dot_f = 
+(L^2*T_f + L*T_f*h*mu_f - L*T_f*h*mu_r - L*R*RRconst*g*l_r*m*cos(theta) - L*R*g*l_r*m*mu_f*cos(theta) + R*g*h*l_f*m*mu_f*mu_r*cos(theta) + R*g*h*l_r*m*mu_f*mu_r*cos(theta) + R*RRconst*g*h*l_f*m*mu_r*cos(theta) + R*RRconst*g*h*l_r*m*mu_r*cos(theta))/(J*L*(L + h*mu_f - h*mu_r))
+
+
+W_dot_r = 
+-(L*T_r*h*mu_r - L*T_r*h*mu_f - L^2*T_r + L*R*RRconst*g*l_f*m*cos(theta) + L*R*g*l_f*m*mu_r*cos(theta) + R*g*h*l_f*m*mu_f*mu_r*cos(theta) + R*g*h*l_r*m*mu_f*mu_r*cos(theta) + R*RRconst*g*h*l_f*m*mu_f*cos(theta) + R*RRconst*g*h*l_r*m*mu_f*cos(theta))/(J*L*(L + h*mu_f - h*mu_r))
+
+
+v_dot = 
+-(F_air*L + F_air*h*mu_f - F_air*h*mu_r + L*g*m*sin(theta) - g*l_f*m*mu_r*cos(theta) - g*l_r*m*mu_f*cos(theta) + g*h*m*mu_f*sin(theta) - g*h*m*mu_r*sin(theta))/(L*m + h*m*mu_f - h*m*mu_r)
